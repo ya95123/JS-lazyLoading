@@ -36,37 +36,25 @@ body {
 }
 
 .frameBigBox {
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  justify-content: space-between;
 }
 
 .frameSmallBox {
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .imgBigBox {
   width: 624px;
-  max-width: 50%;
+  max-width: 51%;
   height: 416px;
   background: $yellow;
-
-  &:nth-child(odd) {
-    margin-right: 2rem;
-  }
+  margin: 0 0 3rem 0;
 }
 
 .imgSmallBox {
   width: 296px;
-  max-width: 25%;
+  max-width: 26%;
   height: 196px;
   background: #D9487D;
-  margin: 0 2rem 2rem 0;
-
-  &:nth-child(n+5) {
-    margin-bottom: 0;
-  }
-
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
+  margin: 0 0 2rem 0;
 }
