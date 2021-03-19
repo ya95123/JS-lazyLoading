@@ -33,6 +33,12 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }
 
 .frameBigBox {

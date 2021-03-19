@@ -34,6 +34,14 @@ body {
       flex-wrap: wrap;
 }
 
+.frameBigBox img,
+.frameSmallBox img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .frameBigBox {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
