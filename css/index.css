@@ -32,6 +32,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .frameBigBox img,
@@ -42,24 +45,13 @@ body {
      object-fit: contain;
 }
 
-.frameBigBox {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.frameSmallBox {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .imgBigBox {
   width: 624px;
   max-width: 51%;
   height: 416px;
   background: #F2D541;
   margin: 0 0 3rem 0;
+  overflow: hidden;
 }
 
 .imgSmallBox {
@@ -68,4 +60,5 @@ body {
   height: 196px;
   background: #D9487D;
   margin: 0 0 2rem 0;
+  overflow: hidden;
 }

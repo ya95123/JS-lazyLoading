@@ -33,6 +33,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   img {
     width: 100%;
@@ -41,20 +42,13 @@ body {
   }
 }
 
-.frameBigBox {
-  justify-content: space-between;
-}
-
-.frameSmallBox {
-  justify-content: space-between;
-}
-
 .imgBigBox {
   width: 624px;
   max-width: 51%;
   height: 416px;
   background: $yellow;
   margin: 0 0 3rem 0;
+  overflow: hidden;
 }
 
 .imgSmallBox {
@@ -63,4 +57,5 @@ body {
   height: 196px;
   background: #D9487D;
   margin: 0 0 2rem 0;
+  overflow: hidden;
 }
