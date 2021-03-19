@@ -18,21 +18,21 @@ body {
 }
 
 body {
-  background: $grey;
+  background: #111e;
 }
 
 #container-img {
-  width: 80%;
-  max-width: 1440px;
+  width: 1280px;
+  max-width: 80%;
   margin: auto;
   padding: 5rem 0;
-  background: #0009;
 }
 
 .frameBigBox,
 .frameSmallBox {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .frameBigBox {
@@ -41,7 +41,6 @@ body {
 }
 
 .frameSmallBox {
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -50,6 +49,10 @@ body {
   max-width: 50%;
   height: 416px;
   background: $yellow;
+
+  &:nth-child(odd) {
+    margin-right: 2rem;
+  }
 }
 
 .imgSmallBox {
@@ -57,9 +60,13 @@ body {
   max-width: 25%;
   height: 196px;
   background: #D9487D;
-  margin-bottom: 2rem;
+  margin: 0 2rem 2rem 0;
 
   &:nth-child(n+5) {
     margin-bottom: 0;
+  }
+
+  &:nth-child(4n) {
+    margin-right: 0;
   }
 }
