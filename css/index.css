@@ -40,7 +40,6 @@ body {
 .frameBigBox img,
 .frameSmallBox img {
   width: 100%;
-  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -48,7 +47,10 @@ body {
 .imgBigBox {
   width: 624px;
   max-width: 51%;
-  height: 416px;
+  /* height: 416px; */
+  height: 0;
+  /* 根據父元素的 width 1280px 的比例撐高高度，同時 max-width 會失效 */
+  padding-bottom: 32.5%;
   background: #F2D541;
   margin: 0 0 3rem 0;
   overflow: hidden;
@@ -57,7 +59,9 @@ body {
 .imgSmallBox {
   width: 296px;
   max-width: 26%;
-  height: 196px;
+  /* height: 196px; */
+  height: 0;
+  padding-bottom: 15.3125%;
   background: #D9487D;
   margin: 0 0 2rem 0;
   overflow: hidden;
