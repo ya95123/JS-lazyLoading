@@ -17,6 +17,27 @@ body {
   background: #111e;
 }
 
+#title {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.tab {
+  color: #fffc;
+  padding: 1rem 0.35rem;
+  position: relative;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  border-radius: 3px;
+  background: #04ADBF;
+  -webkit-animation: openLine 1s;
+          animation: openLine 1s;
+}
+
 #container-img {
   width: 1280px;
   max-width: 80%;
@@ -65,4 +86,26 @@ body {
   background: #D9487D;
   margin: 0 0 2rem 0;
   overflow: hidden;
+}
+
+@-webkit-keyframes openLine {
+  0% {
+    width: 0;
+    left: 50%;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@keyframes openLine {
+  0% {
+    width: 0;
+    left: 50%;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
 }
