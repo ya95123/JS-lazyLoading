@@ -35,3 +35,13 @@ const lazyObserver = new IntersectionObserver(lazyCallback, lazyOptions)
 
 // observe images
 lazyImages.forEach(img => lazyObserver.observe(img))
+
+
+// 點擊 tabs ---
+const tabs = document.querySelectorAll(".tab")
+const underlines = document.querySelectorAll(".underline")
+for (let i = 0; i < tabs.length; i++) {
+  tabs[i].onclick = () => {
+    underlines[i].classList.toggle("active")
+  }
+}

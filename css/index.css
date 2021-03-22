@@ -27,6 +27,7 @@ body {
   padding: 1rem 0.35rem;
   position: relative;
   cursor: pointer;
+  background: 3px solid #D9487D;
 }
 
 .tab::after {
@@ -56,6 +57,14 @@ body {
   background: #04ADBF;
   -webkit-animation: openLine 1s;
           animation: openLine 1s;
+}
+
+.active {
+  background: #D9487D !important;
+  -webkit-animation: none !important;
+          animation: none !important;
+  width: 100% !important;
+  left: 0 !important;
 }
 
 #container-img {

@@ -31,6 +31,7 @@ body {
   padding: 1rem 0.35rem;
   position: relative;
   cursor: pointer;
+  background: 3px solid $pink;
 
   &::after {
     content: '';
@@ -58,6 +59,13 @@ body {
   border-radius: 3px;
   background: $blue-sky;
   animation: openLine 1s;
+}
+
+.active {
+  background: $pink !important;
+  animation: none !important;
+  width: 100% !important;
+  left: 0 !important;
 }
 
 #container-img {
